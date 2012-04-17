@@ -34,11 +34,11 @@ The data format is tab-delimited text in utf8 encoding, with the following field
 
 ## Exceptions and Caveats:
 
-`gb` Great Britain : Only supports 'in-codes' no 'out-codes' supported
-`fr` France : CEDEX is supported in the JSON response, queries are only 5 digit numbers
-`ar` Argentina : Only the 4 digit old version is supported at the moment
-`br` Brazil : Only major postal codes are available (Codes ending with -000 and the major code per municipality)
-`sk` Slovak Rep. : Please note that there is a space in the postal code
+- `gb` Great Britain : Only supports 'in-codes' no 'out-codes' supported
+- `fr` France : CEDEX is supported in the JSON response, queries are only 5 digit numbers
+- `ar` Argentina : Only the 4 digit old version is supported at the moment
+- `br` Brazil : Only major postal codes are available (Codes ending with -000 and the major code per municipality)
+- `sk` Slovak Rep. : Please note that there is a space in the postal code
 
 ## Questions?
 
