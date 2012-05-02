@@ -1,67 +1,48 @@
-from __future__ import with_statement
-import codecs
-import csv
+from pymongo import Connection
+from pymongo.database import Database
 import sys
 import json
+import sys
 import os
 
-from contextlib import closing
-from zipfile import ZipFile, ZIP_DEFLATED
-import os
  
 '''
-Made specifically for GEONAMES.ORG postal code data parsing
+Generates Table and Information from MONGODB
 '''
-def main():
-
-    if len(sys.argv) <3:
-        print "Usage: "+sys.argv[0]+" <csv-file> <country-file>"
-        sys.exit(-1)
+def build_table():
     
-    csvfile = sys.argv[1]
-    countryfile = sys.argv[2]
-
-    # get full country names
-    cfile = csv.reader( open(countryfile, 'rb' ) , delimiter="\t",quotechar='|')
-    names = dict()
-
-    # Map country code to full names
-    for lines in cfile:
-        if lines[0]!="":
-            names[lines[0].lower() ] = lines[1]
-    
-    # Read the TAB delimited file 
-    reader =csv.reader(open(csvfile, 'rb'), delimiter='\t', quotechar='|')
     
     # Keep track of country changes
     min_val = dict()
+    names = dict()
     max_val = dict()
     total = dict()
     ccodes = set()
     
-
     print "Generating Files ... "
 
-    for row in reader :
+    for record in list(db['global'].find()) :
         
         # If not empty
-        if row[0] != '':
+        if record['country abbreviation'] != '':
             
             # Extract the country code
-            cc = row[0].lower()
-            
-            # Post code, NOT APPLICABLE TO FRACE
-            postcode = row[1]
+            cc = record['country abbreviation']
             
             # Print if we have moved onto a new country country
             if cc not in ccodes:
+                print cc
                 ccodes.add(cc)
-                total[cc] = 0
-                min_val[cc] = postcode
-                max_val[cc] = postcode
+                names[cc] = record['country']
+                total[cc] = 1
+                min_val[cc] = record['post code']
+                max_val[cc] = record['post code']
             else:
+                if max_val[cc] < record['post code']:
+                    max_val[cc] = record['post code']
+                if min_val[cc] > record['post code']:
+                    min_val[cc] = record['post code']
                 total[cc]+=1
-                max_val[cc] = postcode
     
     # Now I have min/max, ccodes, names and totals for all the countries
     
@@ -124,6 +105,21 @@ def html_row(info):
 
 
 
+if __name__ == "__main__":
 
-main()
+    if ( len(sys.argv) != 2 ):
+        print "Usage: %s <username> <password>" % sys.argv[0]
+
+    username = sys.argv[1]
+    password = sys.argv[2]
+    
+    print username
+    print password
+
+    connection = Connection()              # Specific url
+    db = Database(connection,'zip')     # Get zip database
+    db.authenticate(username,password)  # Authenticate
+    
+    build_table();
+
 
