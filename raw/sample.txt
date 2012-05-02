@@ -1,0 +1,4 @@
+country,country abbreviation,post code,place name,state,state abbreviation,latitude,longitude
+"Atlantis","AL","ATL01","Atlantis City","Atlantic State","AS","44.5","2.5667"
+"Atlantis","AL","ATL02","Metropolis","District of Comics","DC","29.4667","4.5"
+"Atlantis","AL","ATL04","Gotham City","District of Comics","DC","18.5","14.5"

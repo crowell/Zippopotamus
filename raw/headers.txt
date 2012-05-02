@@ -1,1 +1,0 @@
-country,post code,place name,state,state abbreviation,ignore1,ignore2,ignore3,ignore4,latitude,longitude

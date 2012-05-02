@@ -1,0 +1,1 @@
+country,country abbreviation,post code,place name,state,state abbreviation,latitude,longitude
