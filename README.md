@@ -12,7 +12,7 @@ Please correct any mistakes or add any new countries that we are missing by addi
 
 This is a csv file with `"` quotations around each term.
 
-A sample file is included in `raw/sample.txt` which shows how to add records for the imaginery country of Atlantis,
+A sample file is included in `raw/sample.txt` which shows how to add records for the imaginary country of Atlantis,
 
 
 #### Formatting 
@@ -29,7 +29,7 @@ The data format is tab-delimited text in utf8 encoding, with the following field
 
 ## Exceptions and Caveats:
 
-- `gb` Great Britain : Only supports 'in-codes' no 'out-codes' supported
+- `gb` Great Britain : Only supports 'in-codes', no 'out-codes' supported
 - `fr` France : CEDEX is supported in the JSON response, queries are only 5 digit numbers
 - `ar` Argentina : Only the 4 digit old version is supported at the moment
 - `br` Brazil : Only major postal codes are available (Codes ending with -000 and the major code per municipality)
