@@ -19,7 +19,7 @@ A sample file is included in `raw/sample.txt` which shows how to add records for
 The data format is tab-delimited text in utf8 encoding, with the following fields :
 
 - `country`             : This is the country's name, like 'Spain'
-- `country abbreviation': This is the ISO 2 letter country code like, "ES" for Spain 
+- `country abbreviation`: This is the ISO 2 letter country code like, "ES" for Spain 
 - `post code`           : This is the postal/zip code of the area, '90210'
 - `place name`          : This is a town/city/metro name like 'San Francisco'
 - `state`               : This is a state or province or region name like 'California'
