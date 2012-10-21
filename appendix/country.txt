@@ -7,7 +7,7 @@ BD,Bangladesh
 BE,Belgium
 BG,Bulgaria
 BR,Brazil
-CA,Candada
+CA,Canada
 CH,Switzerland
 CZ,Czech Republic
 DE,Germany
