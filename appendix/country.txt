@@ -45,7 +45,7 @@ MP,Northern Mariana Islands
 MQ,Martinique
 MX,Mexico
 MY,Malaysia
-NL,Holland
+NL,Netherlands
 NO,Norway
 NZ,New Zealand
 PH,Phillippines
