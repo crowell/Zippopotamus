@@ -1,0 +1,24 @@
+country,country abbreviation,post code,place name,state,state abbreviation,latitude,longitude
+"Serbia","RS",11000,"Beograd",,,44.8205556,20.4622222
+"Serbia","RS",14000,"Valjevo",,,44.274368,19.8911
+"Serbia","RS",17500,"Vranje",,,42.55,21.9
+"Serbia","RS",19000,"Zaječar",,,43.913601,22.3032
+"Serbia","RS",23000,"Zrenjanin",,,45.36581,20.40358
+"Serbia","RS",35000,"Jagodina",,,43.9813889,21.2455556
+"Serbia","RS",34000,"Kragujevac",,,44.012711,20.926741
+"Serbia","RS",36000,"Kraljevo",,,43.72342,20.686975
+"Serbia","RS",37000,"Kruševac",,,43.5808882649,21.3278961182
+"Serbia","RS",16000,"Leskovac",,,43,21.95
+"Serbia","RS",15300,"Loznica",,,44.5333333,19.2258333
+"Serbia","RS",18000,"Niš",,,43.31938,21.896328
+"Serbia","RS",36300,"Novi Pazar",,,43.1428719,20.51713
+"Serbia","RS",21000,"Novi Sad",,,45.262231,19.851858
+"Serbia","RS",26000,"Pančevo",,,44.863655,20.659329
+"Serbia","RS",12000,"Požarevac",,,44.6166667,21.1833333
+"Serbia","RS",11300,"Smederevo",,,44.651382,20.935513
+"Serbia","RS",25000,"Sombor",,,45.78,19.12
+"Serbia","RS",22000,"Sremska Mitrovica",,,44.9833333,19.6166667
+"Serbia","RS",24000,"Subotica",,,46.098209,19.67111
+"Serbia","RS",31000,"Užice",,,43.86417,19.850031
+"Serbia","RS",32000,"Čačak",,,43.888908,20.35038
+"Serbia","RS",15000,"Šabac",,,44.75423,19.699751
